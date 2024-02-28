@@ -75,6 +75,7 @@ const clears = ()=>{
     if (dom) {
         dom.remove()
     }
+    button1.remove()
     button.remove()
 }
 
@@ -117,6 +118,10 @@ const screenshot = (dom: any, characteristic = '') => {
         button1.style.bottom = '50px'
         button1.style.right = '50px'
         button1.style.zIndex = '10'
+        button1.style.background = '#3498db'
+        button1.style.width = '180px'
+        button1.style.padding = '4px 0'
+        button1.style.borderRadius = '3px'
         button1.onclick= preserve
         MasterNode.appendChild(button);
         MasterNode.appendChild(button1);
@@ -126,14 +131,11 @@ const screenshot = (dom: any, characteristic = '') => {
 const preserve = ()=>{
     button.remove()
     button1.remove()
-    // const data = document.querySelectorAll('.createName')
-    // data.forEach(item=>{
-    //     item.remove()
-    // })
     let dom:any = document.querySelector('body')
     domtoimage.toJpeg(dom, { quality: 0.95 }).then((dataUrl: any)=>
     {
             console.log(dataUrl)
+            console.log('54','44')
             var link = document.createElement('a');
             link.download = 'a.png';
             link.href = dataUrl;
@@ -141,8 +143,8 @@ const preserve = ()=>{
             clears()
         }
     ).catch(function (error: any) {
+        console.log(error,'44')
         clears()
-        console.log(error, '截图失败!')
     })
 }
 

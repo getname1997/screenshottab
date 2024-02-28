@@ -1,6 +1,5 @@
-# screenshottab
+# screenshottab 标记截图中点击元素
 
-标记截图的文件
 
 
 ## 安装
