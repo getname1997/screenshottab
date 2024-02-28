@@ -1,8 +1,9 @@
 {
   "name": "screenshottab",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "screenshotTab",
   "main": "dist/index.js",
+  "repository": "git@github.com:getname1997/screenshottab.git",
   "scripts": {
     "build": "rollup -c"
   },
@@ -26,10 +27,7 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+git@github.com:getname1997/screenshottab.git"
-  },
+
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.3",
     "@types/dom-to-image": "^2.6.4"
