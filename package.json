@@ -26,6 +26,10 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:getname1997/screenshottab.git"
+  },
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.3",
     "@types/dom-to-image": "^2.6.4"
