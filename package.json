@@ -3,7 +3,10 @@
   "version": "0.0.6",
   "description": "screenshotTab",
   "main": "dist/index.js",
-  "repository": "git@github.com:getname1997/screenshottab.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:getname1997/screenshottab.git"
+  },
   "scripts": {
     "build": "rollup -c"
   },
